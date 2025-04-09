@@ -102,7 +102,7 @@ model_ord.fit(X_train_ord_final, y_train_data)
 y_pred_ord = model_ord.predict(X_test_ord_final)
 acc_ord = accuracy_score(y_test_data, y_pred_ord)
 
-# === SECTION: Target Encoding (Exact Matching Your Version) ===
+# === SECTION: Target Encoding ===
 pd.set_option('future.no_silent_downcasting', True)
 
 tencoder = TargetEncoder(cols=['Room', 'Zip_area', 'Zip_loc'])
